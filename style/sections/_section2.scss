@@ -1,0 +1,82 @@
+.section__2 {
+    margin: 0 auto;
+    width: 941px;
+    height: 367px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & h2 {
+        text-align: center;
+        @include font ('Montserrat', 26px, 700);
+        color: #444444;
+    }
+    &__avatar__cover {
+        margin-top: 30px;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__avatar {
+        height: 100%;
+        width: 221px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__photo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 22px;
+            background-image: url('./images/Avatar/Avatar1.png');
+        }
+        & h2 {
+            text-align: center;
+            width: 221px;
+            height: 18px;
+            @include font ('Montserrat',
+            14px,
+            700);
+            margin-bottom: 24px;
+        }
+        & p {
+            text-align: center;
+            @include font ('Roboto',
+            14px,
+            300);
+            color: #666666;
+        }
+    }
+    // in case, the first avatar, will need to be replaced
+    & #avatar__1 {
+        background-image: url('./images/Avatar/Avatar1.png');
+    }
+    & #avatar__2 {
+        background-image: url('./images/Avatar/Avatar2.png');
+    }
+    & #avatar__3 {
+        background-image: url('./images/Avatar/Avatar3.png');
+    }
+    & #avatar__4 {
+        background-image: url('./images/Avatar/Avatar4.png');
+    }
+    & button {
+        margin: 0 auto;
+        width: 180px;
+        height: 40px;
+        color: $secondary-color;
+        background-color: $main-color;
+        border: 2px solid $secondary-color;
+        border-radius: 40px;
+        @include font ('Montserrat',
+        14px,
+        700);
+        text-align: center;
+        line-height: 50%;
+        &:hover {
+            background-color: $secondary-color;
+            color: $main-color;
+            border: 2px solid $main-color;
+        }
+    }
+}

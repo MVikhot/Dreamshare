@@ -1,0 +1,82 @@
+.header {
+    width: 1440px;
+    height: 700px;
+    margin: 0 auto;
+    background: {
+        image: url('./images/Header/Headaer\ and\ Promo.png');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    &__menu__cover {
+        margin: 0 auto;
+        margin-left: 248px;
+        padding-top: 47px;
+        width: 901px;
+        display: flex;
+        justify-content: space-between;
+        color: $main-color;
+        @include font('Montserrat',
+        20px,
+        700);
+        text-align: center;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 176px;
+        height: 23px;
+        color: $main-color;
+        @include font('Montserrat',
+        14px,
+        400);
+        &__link {
+            width: 90px;
+            height: 39px;
+            line-height: 38px;
+        }
+        &__link:hover {
+            border: 2px solid $main-color;
+            border-radius: 40px;
+        }
+    }
+    &__text {
+        color: $main-color;
+        margin: 0 auto;
+        margin-top: 151.5px;
+        width: 470px;
+        height: 253px;
+        line-height: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        @include font('Montserrat',
+        52px,
+        700);
+        p {
+            margin-top: -6.5px;
+            @include font('Roboto',
+            24px,
+            300);
+        }
+        button {
+            width: 225px;
+            height: 40px;
+            border-radius: 40px;
+            @include font('Montserrat',
+            14px,
+            700);
+            line-height: 17px;
+            color: $main-color;
+            background-color: $secondary-color;
+            border: none;
+            &:hover {
+                border: 2px solid $main-color;
+            }
+        }
+    }
+}
